@@ -121,6 +121,34 @@ def resolve_movmement(world, flow):
     return new_world
 
 
+# world = blank_world(16, 16)
+
+# world[-1, -1] = players[1]
+# world[-1, -2] = players[1]
+# world[1, 1] = players[0]
+# world[1, 2] = players[0]
+# world[1, 3] = players[0]
+# # world[1, 4] = players[0]
+
+# world = resolve_combat(world)
+
+# pmat(world)
+
+# flow = np.zeros_like(world)
+# flow[1, 1] = 2
+# flow[1, 2] = 2
+# flow[1, 3] = 2
+# # flow[1, 4] = 2
+
+# world = resolve_movmement(world, flow)
+
+# pmat(world)
+
+# world = resolve_combat(world)
+
+# pmat(world)
+
+
 world = blank_world(16, 16)
 
 world[-1, -1] = players[1]
@@ -142,8 +170,4 @@ flow[1, 3] = 2
 
 world = resolve_movmement(world, flow)
 
-pmat(world)
-
 world = resolve_combat(world)
-
-pmat(world)
